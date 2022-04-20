@@ -1,0 +1,233 @@
+#header {
+    .topHeader {
+        background-color: #002040;
+        color: white;
+
+
+        .leftTop {
+            margin-left: 20px;
+
+            span {
+                font-size: 13px;
+            }
+        }
+
+        .rightTop {
+            ul {
+                li {
+                    a {
+                        i {
+                            color: white;
+                            padding: 7px;
+                            border-left: 1px solid #334d66;
+                            transition: 0.3s ease-in-out;
+
+                            &:hover {
+                                background: #ffb600;
+                                color: #002e5b;
+                                border-color: #ffb600;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // topHeader end 
+
+    .midHeader {
+        padding: 20px 0 5px 0;
+        background-color: #002e5b;
+
+        .contact {
+            color: white;
+
+            .boxMid {
+                padding: 0 40px;
+                position: relative;
+
+                i {
+                    position: absolute;
+                    left: 0;
+                    top: 10%;
+                    font-size: 2rem;
+                }
+
+                span {
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    // midHeader end 
+    .botHeader {
+        background-color: #ffb600;
+        padding: 0 35px;
+        position: relative;
+
+
+        .menu {
+            width: 42%;
+            margin: auto;
+
+            ul {
+                li {
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        padding: 18px 10px;
+                        color: black;
+                        font-weight: 600;
+                        font-size: 14px;
+                        position: relative;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 15%;
+                            width: 0%;
+                            height: 5px;
+                            transition: 0.5s;
+                            background-color: #002040;
+
+                        }
+
+                        &:hover {
+                            &::before {
+                                width: 70%;
+                            }
+                        }
+                    }
+
+                    // servicesMenu start 
+                    &.servicesMenu {
+                        position: relative;
+
+                        ul {
+                            width: 150px;
+                            position: absolute;
+                            top: 100%;
+                            left: 0%;
+                            border: 1px solid rgba(99, 99, 99, 0.264);
+                            visibility: hidden;
+                            opacity: 0;
+                            background: white;
+                            transition: 0.6s ease-in-out;
+                            transform: translateY(5px);
+
+                            li {
+                                a {
+                                    padding: 10px;
+                                    color: #0f0f0f;
+                                    border-bottom: 0.5px solid rgba(15, 15, 15, .35);
+                                    cursor: pointer;
+
+                                    &::before {
+                                        content: none;
+                                    }
+                                }
+                            }
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                left: 0%;
+                                width: 100%;
+                                height: 5px;
+                                transition: 0.5s;
+                                background-color: #002040;
+                            }
+                        }
+
+                        &:hover {
+                            ul {
+                                visibility: visible;
+                                opacity: 1;
+                                transform: translateY(-10px);
+                            }
+                        }
+                    }
+
+                    // servicesMenu end 
+                    // pagesBigmenu start 
+                    &.pagesBig {
+                        .bigMenu {
+                            position: absolute;
+                            top: 100%;
+                            left: 10%;
+                            width: 70%;
+                            padding: 20px;
+                            background-color: white;
+                            z-index: 1;
+                            border: 1px solid rgba(99, 99, 99, 0.264);
+                            visibility: hidden;
+                            opacity: 0;
+                            transform: translateY(5px);
+                            transition: 0.4s ease-in-out;
+
+
+                            .pagesBox {
+                                margin-top: 10px;
+                                width: 25%;
+                                padding: 0 20px;
+                                border-right: 1px solid rgba(128, 128, 128, 0.242);
+
+                                ul {
+                                    li {
+                                        a {
+                                            display: block;
+                                            padding: 5px;
+                                            font-weight: normal;
+                                            color: #0f0f0f;
+
+                                            &::before {
+                                                content: none;
+                                            }
+
+                                            h6 {
+                                                font-weight: bold;
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                left: 0%;
+                                width: 100%;
+                                height: 5px;
+                                transition: 0.5s;
+                                background-color: #002040;
+                            }
+
+                        }
+
+                        &:hover {
+                            .bigMenu {
+                                opacity: 1;
+                                visibility: visible;
+                                transform: translateY(-10px);
+
+                            }
+                        }
+
+                    }
+                    // pagesBigmenu end 
+                }
+            }
+        }
+    }
+}

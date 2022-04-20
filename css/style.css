@@ -1,0 +1,201 @@
+#header .topHeader {
+  background-color: #002040;
+  color: white;
+}
+
+#header .topHeader .leftTop {
+  margin-left: 20px;
+}
+
+#header .topHeader .leftTop span {
+  font-size: 13px;
+}
+
+#header .topHeader .rightTop ul li a i {
+  color: white;
+  padding: 7px;
+  border-left: 1px solid #334d66;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#header .topHeader .rightTop ul li a i:hover {
+  background: #ffb600;
+  color: #002e5b;
+  border-color: #ffb600;
+}
+
+#header .midHeader {
+  padding: 20px 0 5px 0;
+  background-color: #002e5b;
+}
+
+#header .midHeader .contact {
+  color: white;
+}
+
+#header .midHeader .contact .boxMid {
+  padding: 0 40px;
+  position: relative;
+}
+
+#header .midHeader .contact .boxMid i {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  font-size: 2rem;
+}
+
+#header .midHeader .contact .boxMid span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#header .midHeader .contact .boxMid p {
+  font-size: 14px;
+}
+
+#header .botHeader {
+  background-color: #ffb600;
+  padding: 0 35px;
+  position: relative;
+}
+
+#header .botHeader .menu {
+  width: 42%;
+  margin: auto;
+}
+
+#header .botHeader .menu ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 18px 10px;
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  position: relative;
+}
+
+#header .botHeader .menu ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15%;
+  width: 0%;
+  height: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #002040;
+}
+
+#header .botHeader .menu ul li a:hover::before {
+  width: 70%;
+}
+
+#header .botHeader .menu ul li.servicesMenu {
+  position: relative;
+}
+
+#header .botHeader .menu ul li.servicesMenu ul {
+  width: 150px;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  border: 1px solid rgba(99, 99, 99, 0.264);
+  visibility: hidden;
+  opacity: 0;
+  background: white;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+#header .botHeader .menu ul li.servicesMenu ul li a {
+  padding: 10px;
+  color: #0f0f0f;
+  border-bottom: 0.5px solid rgba(15, 15, 15, 0.35);
+  cursor: pointer;
+}
+
+#header .botHeader .menu ul li.servicesMenu ul li a::before {
+  content: none;
+}
+
+#header .botHeader .menu ul li.servicesMenu ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #002040;
+}
+
+#header .botHeader .menu ul li.servicesMenu:hover ul {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+#header .botHeader .menu ul li.pagesBig .bigMenu {
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  width: 70%;
+  padding: 20px;
+  background-color: white;
+  z-index: 1;
+  border: 1px solid rgba(99, 99, 99, 0.264);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+#header .botHeader .menu ul li.pagesBig .bigMenu .pagesBox {
+  margin-top: 10px;
+  width: 25%;
+  padding: 0 20px;
+  border-right: 1px solid rgba(128, 128, 128, 0.242);
+}
+
+#header .botHeader .menu ul li.pagesBig .bigMenu .pagesBox ul li a {
+  display: block;
+  padding: 5px;
+  font-weight: normal;
+  color: #0f0f0f;
+}
+
+#header .botHeader .menu ul li.pagesBig .bigMenu .pagesBox ul li a::before {
+  content: none;
+}
+
+#header .botHeader .menu ul li.pagesBig .bigMenu .pagesBox ul li a h6 {
+  font-weight: bold;
+}
+
+#header .botHeader .menu ul li.pagesBig .bigMenu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #002040;
+}
+
+#header .botHeader .menu ul li.pagesBig:hover .bigMenu {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+/*# sourceMappingURL=style.css.map */
