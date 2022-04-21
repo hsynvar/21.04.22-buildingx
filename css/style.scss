@@ -231,3 +231,79 @@
         }
     }
 }
+// header end 
+// constSlide start 
+
+// .constSlide{
+//     position: relative;
+//     .slideShow{
+//         .slideBox{
+//             width: 100%;
+//             // display: none;
+//             img{
+//                 width: 100%;
+//                 height: 100%;
+//             }
+//             .textBox{
+//                 position: absolute;
+//                 top: 30%;
+//                 left: 40%;
+//                 transform: translate(-40%,-30%);
+//                 width: 50%;
+//                 margin: auto;
+//                 background-color: red;
+//             }
+//         }
+//         .next,.prev{
+//             position: absolute;
+//             top: 50%;
+//             font-size: 25px;
+//             color: red;
+//             transform: translateY(-50%);
+//         }
+//         .next{
+//             right: 15px;
+//         }
+//         .prev{
+//             left: 15px;
+//         }
+//     }
+// }
+
+
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    ul{
+        display: flex;
+        position: relative;
+        left: 0;
+        transition: 3s ease;
+        li{
+            width: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .next,.prev{
+        position: absolute;
+        top: 50%;
+        font-size: 20px;
+        color: white;
+        background-color: #ffb600;
+        padding: 8px 15px;
+        border-radius: 10px;
+        transform: translateY(-50%);
+    }
+    .next{
+        right: 15px;
+    }
+    .prev{
+        left: 15px;
+
+    }
+}
