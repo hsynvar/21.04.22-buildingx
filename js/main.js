@@ -1,3 +1,5 @@
+// ALINMAYAN SLIDER 
+
 // var slideWidth= document.querySelector('.constSlide').clientWidth
 // var slideLength=document.querySelectorAll('.constSlide img').length
 // // var mySlideWidth=slideWidth*slideLength
@@ -42,6 +44,7 @@
 //   setTimeout(showSlides, 2000); // Change image every 2 seconds
 // }
 
+// ALINAN SLIDER 
 
 var slideWidth= document.querySelector('.slider').clientWidth
 var slideLength=document.querySelectorAll('.slider li').length

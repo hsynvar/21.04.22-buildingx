@@ -104,6 +104,7 @@
   border: 1px solid rgba(99, 99, 99, 0.264);
   visibility: hidden;
   opacity: 0;
+  z-index: 1;
   background: white;
   -webkit-transition: 0.6s ease-in-out;
   transition: 0.6s ease-in-out;
@@ -225,7 +226,8 @@
   height: 100%;
 }
 
-.slider .next, .slider .prev {
+.slider .next,
+.slider .prev {
   position: absolute;
   top: 50%;
   font-size: 20px;
@@ -243,5 +245,71 @@
 
 .slider .prev {
   left: 15px;
+}
+
+.slider .text {
+  width: 40%;
+  margin: auto;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -45%);
+          transform: translate(-50%, -45%);
+}
+
+.slider .text h1 {
+  font-weight: bold;
+}
+
+.slider .text span {
+  display: block;
+}
+
+.slider .text .buttons {
+  width: 65%;
+  margin: auto;
+}
+
+.slider .text .buttons a {
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 13px 28px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.slider .text .buttons a.yellow {
+  background: #ffb600;
+  margin-right: 20px;
+}
+
+.slider .text .buttons a.dark {
+  background-color: #002e5b;
+}
+
+.slider .text .buttons a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #000;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.slider .text .buttons a:hover::before {
+  z-index: -1;
+  width: 100%;
+  left: 0%;
 }
 /*# sourceMappingURL=style.css.map */
