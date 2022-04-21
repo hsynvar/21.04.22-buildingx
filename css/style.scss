@@ -2,6 +2,7 @@
     .topHeader {
         background-color: #002040;
         color: white;
+
         .leftTop {
             margin-left: 20px;
 
@@ -70,12 +71,12 @@
         padding: 0 35px;
         position: relative;
         z-index: 1;
+
         .menu {
             width: 42%;
             margin: auto;
 
             ul {
-                display: flex;
                 li {
                     a {
                         display: block;
@@ -229,18 +230,20 @@
                 }
             }
         }
+
         .navIcon {
             position: absolute;
             top: 15px;
             right: 10px;
-            // display: none;
+            display: none;
+
             i {
                 color: black;
                 font-size: 18px;
             }
         }
     }
-   
+
 }
 
 // header end 
@@ -290,6 +293,7 @@
 
 .slideConst {
     width: 100%;
+
     .slider {
         width: 100%;
         margin: auto;
@@ -390,7 +394,7 @@
                         height: 100%;
                         border-radius: 5px;
                         background-color: #000;
-                        transition: 0.5s ease-in-out;
+                        transition: 0.5s ease;
                     }
 
                     &:hover {
@@ -408,23 +412,125 @@
 }
 
 // slider end 
+.house {
+    .topBox {
+        position: absolute;
+        bottom: -200px;
+        left: 50%;
+        // transform: translateX(-50%);
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+
+        .boxHouse {
+            text-align: center;
+            color: white;
+            background-color: #002040;
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+            height: 40vh;
+            border-radius: 5px;
+
+            .img {
+                width: 50%;
+                margin: auto;
+            }
+
+            h5 {
+                font-weight: bold;
+                margin: 15px 0;
+            }
+
+            span {
+                font-size: 16px;
+            }
+
+            &.first {
+                background-image: url(http://www.themesindustry.com/html/buildingx/images/detail1.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-right: -25px;
+                margin-top: 20px;
+            }
+
+            &.yellow {
+                background-image: url(http://www.themesindustry.com/html/buildingx/images/detail2.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-right: -25px;
+
+            }
+
+            &.end {
+                background-image: url(http://www.themesindustry.com/html/buildingx/images/detail3.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-top: 20px;
+
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: -50%;
+                left: -5%;
+                width: 60%;
+                height: 200%;
+                opacity: 0;
+                overflow: hidden;
+                transition: 0.2s;
+                transform: rotate(-30deg);
+                background: rgba(255, 255, 255, 0.13);
+                background: linear-gradient(to left,
+                        rgba(255, 255, 255, 0.13) 0%,
+                        rgba(255, 255, 255, 0.13) 100%,
+                    );
+            }
+
+            &:hover {
+                &::after {
+                    opacity: 1;
+                    left: 125%;
+                    transition-property: left, top, opacity;
+                    transition-duration: 0.8s, 0.9s, 0.15s;
+                    transition-timing-function: ease;
+                }
+            }
+        }
+    }
+
+    // topBox end 
+}
+
+
+
+
+
+
 
 
 
 
 
 // responsive start 
-@media(max-width:762px){
-    #header{
-        .topHeader{
+@media(max-width:762px) {
+    #header {
+        .topHeader {
             display: none;
         }
-        .midHeader{
+
+        .midHeader {
             display: none;
         }
-        .botHeader{
+
+        .botHeader {
             height: 50px;
             position: relative;
+
             .menu {
                 position: absolute;
                 top: 20%;
@@ -435,11 +541,13 @@
                 transition: 0.3s ease-in;
                 visibility: hidden;
                 height: 200px;
+
                 ul {
                     li {
                         a {
-                            padding: 5px 15px ;
+                            padding: 5px 15px;
                             font-size: 12px;
+
                             &::before {
                                 content: none;
                             }
@@ -453,30 +561,68 @@
                     top: 100%;
                 }
             }
+
+            .navIcon {
+                display: block;
+            }
         }
     }
+
     // header end 
-    .slideConst{
-        .slider{
-            .text{
+    .slideConst {
+        .slider {
+            ul {
+                li {
+                    img {
+                        height: 40vh;
+                    }
+                }
+            }
+
+            .text {
                 width: 60%;
-                h1{
+
+                h1 {
                     font-size: 14px;
                 }
-                span{
+
+                span {
                     font-size: 12px;
                 }
-                .buttons{
-                    a{
+
+                .buttons {
+                    a {
                         font-size: 8px;
                         padding: 12px;
                         text-align: center;
                     }
 
                 }
-               
+
             }
 
+        }
+    }
+
+    // slide end 
+    .house {
+        .topBox {
+            width: 100%;
+            position: static;
+
+            .boxHouse {
+                margin: 0;
+                height: 60vh;
+
+                &.first {
+                    margin: 0;
+                }
+
+                &.end {
+                    margin: 0;
+                }
+
+            }
         }
     }
 }

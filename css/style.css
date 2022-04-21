@@ -67,12 +67,6 @@
   margin: auto;
 }
 
-#header .botHeader .menu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 #header .botHeader .menu ul li a {
   display: block;
   text-decoration: none;
@@ -211,6 +205,7 @@
   position: absolute;
   top: 15px;
   right: 10px;
+  display: none;
 }
 
 #header .botHeader .navIcon i {
@@ -333,14 +328,102 @@
   height: 100%;
   border-radius: 5px;
   background-color: #000;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .slideConst .slider .text .buttons a:hover::before {
   z-index: -1;
   width: 100%;
   left: 0%;
+}
+
+.house .topBox {
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.house .topBox .boxHouse {
+  text-align: center;
+  color: white;
+  background-color: #002040;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  height: 40vh;
+  border-radius: 5px;
+}
+
+.house .topBox .boxHouse .img {
+  width: 50%;
+  margin: auto;
+}
+
+.house .topBox .boxHouse h5 {
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.house .topBox .boxHouse span {
+  font-size: 16px;
+}
+
+.house .topBox .boxHouse.first {
+  background-image: url(http://www.themesindustry.com/html/buildingx/images/detail1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: -25px;
+  margin-top: 20px;
+}
+
+.house .topBox .boxHouse.yellow {
+  background-image: url(http://www.themesindustry.com/html/buildingx/images/detail2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: -25px;
+}
+
+.house .topBox .boxHouse.end {
+  background-image: url(http://www.themesindustry.com/html/buildingx/images/detail3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.house .topBox .boxHouse::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -5%;
+  width: 60%;
+  height: 200%;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  background: rgba(255, 255, 255, 0.13);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.13)), to(rgba(255, 255, 255, 0.13)));
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 100%);
+}
+
+.house .topBox .boxHouse:hover::after {
+  opacity: 1;
+  left: 125%;
+  -webkit-transition-property: left, top, opacity;
+  transition-property: left, top, opacity;
+  -webkit-transition-duration: 0.8s, 0.9s, 0.15s;
+          transition-duration: 0.8s, 0.9s, 0.15s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
 @media (max-width: 762px) {
@@ -378,6 +461,12 @@
     visibility: visible;
     top: 100%;
   }
+  #header .botHeader .navIcon {
+    display: block;
+  }
+  .slideConst .slider ul li img {
+    height: 40vh;
+  }
   .slideConst .slider .text {
     width: 60%;
   }
@@ -391,6 +480,20 @@
     font-size: 8px;
     padding: 12px;
     text-align: center;
+  }
+  .house .topBox {
+    width: 100%;
+    position: static;
+  }
+  .house .topBox .boxHouse {
+    margin: 0;
+    height: 60vh;
+  }
+  .house .topBox .boxHouse.first {
+    margin: 0;
+  }
+  .house .topBox .boxHouse.end {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
