@@ -1,7 +1,7 @@
 // responsive header 
-let navicon=document.querySelector(".navIcon")
-let headmenu=document.querySelector(".menu")
-navicon.addEventListener("click", function(){
+let navicon = document.querySelector(".navIcon")
+let headmenu = document.querySelector(".menu")
+navicon.addEventListener("click", function () {
     headmenu.classList.toggle("navActive")
 })
 
@@ -56,32 +56,32 @@ navicon.addEventListener("click", function(){
 
 // ALINAN SLIDER 
 
-var slideWidth= document.querySelector('.slider').clientWidth
-var slideLength=document.querySelectorAll('.slider li').length
-var mySlideWidth=slideWidth*slideLength
-var slideUl=document.querySelector('.slider ul')
+var slideWidth = document.querySelector('.slider').clientWidth
+var slideLength = document.querySelectorAll('.slider li').length
+var mySlideWidth = slideWidth * slideLength
+var slideUl = document.querySelector('.slider ul')
 
-slideUl.style.width=mySlideWidth+'px'
-var next= document.querySelector('.slider .next')
-var prev= document.querySelector('.slider .prev')
-var c=0
+slideUl.style.width = mySlideWidth + 'px'
+var next = document.querySelector('.slider .next')
+var prev = document.querySelector('.slider .prev')
+var c = 0
 
-next.onclick=function(){
+next.onclick = function () {
     clearInterval(stopInterval)
-    siruz()
+    slideConst()
     setInterval(() => {
-        siruz()
+        slideConst()
     }, 5000);
 }
 
-function siruz(){
+function slideConst() {
     c++;
-    if(c==slideLength){
-        c=0
+    if (c == slideLength) {
+        c = 0
     }
-    slideUl.style.left= -c*(slideWidth) + 'px'
+    slideUl.style.left = -c * (slideWidth) + 'px'
 }
 
-var stopInterval=setInterval(() => {
-    siruz()
+var stopInterval = setInterval(() => {
+    slideConst()
 }, 6000);
