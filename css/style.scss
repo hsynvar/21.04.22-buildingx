@@ -664,44 +664,53 @@
 }
 
 // FEATURE SECTION END 
-.leading{
+.leading {
     padding: 2rem;
-    .topText{
+
+    .topText {
         width: 70%;
         text-align: center;
         margin: auto;
-        h1{
+
+        h1 {
             font-weight: bold;
             padding: 10px 0;
-        border-bottom: 1px solid rgba(170, 167, 167, 0.462);
+            border-bottom: 1px solid rgba(170, 167, 167, 0.462);
 
         }
     }
-    .bottomLead{
+
+    .bottomLead {
         width: 80%;
         margin: auto;
         text-align: center;
-        .miniLead{
-            padding-top: 3rem ;
-            .projectIcon{
+
+        .miniLead {
+            padding-top: 3rem;
+
+            .projectIcon {
                 margin-bottom: 3rem;
-                i{
+
+                i {
                     font-size: 3rem;
                     color: #ffb600;
                     margin-bottom: 25px;
 
                 }
-                h1{
+
+                h1 {
                     font-weight: bold;
                     font-size: 35px;
                 }
             }
         }
-        .imgLead{
+
+        .imgLead {
             margin-top: 2rem;
         }
     }
 }
+
 // leading end 
 
 
@@ -887,21 +896,24 @@
 
             .allBox {
                 overflow: hidden;
+
                 img {
                     width: 470px;
                     margin: 0;
-                transition: 0.8s ease-in-out;
+                    transition: 0.8s ease-in-out;
 
                 }
-                &:hover{
-                    
-                    img{
+
+                &:hover {
+
+                    img {
                         overflow: hidden;
                         transform: scale(1.2);
                         border-radius: 10px;
                     }
                 }
-                .overlay{
+
+                .overlay {
                     z-index: 1;
 
                 }
@@ -911,20 +923,24 @@
     }
 
     // section feature end 
-    .leading{
-        .topText{
+    .leading {
+        .topText {
             width: 95%;
             margin: auto;
-            span{
+
+            span {
                 font-size: 14px;
             }
-            h1{
+
+            h1 {
                 font-size: 25px;
             }
         }
-        .bottomLead{
+
+        .bottomLead {
             width: 100%;
         }
     }
+
     // leading end 
 }
