@@ -675,9 +675,23 @@
     padding: 0;
     margin: 0 auto;
   }
+  .feature .botImgs .allBox {
+    overflow: hidden;
+  }
   .feature .botImgs .allBox img {
     width: 470px;
     margin: 0;
+    -webkit-transition: 0.8s ease-in-out;
+    transition: 0.8s ease-in-out;
+  }
+  .feature .botImgs .allBox:hover img {
+    overflow: hidden;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    border-radius: 10px;
+  }
+  .feature .botImgs .allBox .overlay {
+    z-index: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */

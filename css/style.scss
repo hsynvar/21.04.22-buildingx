@@ -411,8 +411,8 @@
 
 }
 
-// slider end 
-// HOUSE START 
+// SECTION slider end 
+// SECTION HOUSE START 
 .house {
     .topBox {
         position: absolute;
@@ -508,7 +508,7 @@
     // topBox end 
 }
 
-// HOUSE END 
+// SECTION HOUSE END 
 
 .about {
     padding: 3rem 2rem 0 2rem;
@@ -571,7 +571,7 @@
     }
 }
 
-// ABOUT END 
+//  SECTION ABOUT END 
 .feature {
     background: url(http://www.themesindustry.com/html/buildingx/images/parallax1.jpg);
     background-attachment: fixed;
@@ -605,9 +605,7 @@
                     text-decoration: none;
                     margin-left: 20px;
                     font-size: 20px;
-
                 }
-
             }
         }
     }
@@ -650,10 +648,7 @@
                     position: absolute;
                     bottom: 4%;
                     left: 5%;
-
                 }
-
-
             }
 
             &:hover {
@@ -668,6 +663,8 @@
     }
 }
 
+// FEATURE SECTION END 
+
 
 
 
@@ -678,7 +675,7 @@
 
 
 // -------------------------- 
-// responsive start 
+// RESPONSIVE START
 @media(max-width:762px) {
     #header {
         .topHeader {
@@ -731,7 +728,7 @@
         }
     }
 
-    //    HEADER END 
+    //     HEADER END 
 
     .slideConst {
         .slider {
@@ -768,7 +765,7 @@
         }
     }
 
-    // SLIDE END 
+    // section SLIDE END 
     .house {
         .topBox {
             width: 100%;
@@ -790,7 +787,7 @@
         }
     }
 
-    // HOUSE END 
+    //  section HOUSE END 
     .about {
         margin-top: 20px;
         padding: 0;
@@ -828,31 +825,52 @@
 
         }
     }
-    // about end 
-    .feature{
-        .topMenu{
+
+    // section about end 
+    .feature {
+        .topMenu {
             width: 100%;
-            ul{
+
+            ul {
                 width: 100%;
-                li{
-                    a{
+
+                li {
+                    a {
                         font-size: 14px;
                         margin-left: 25px;
                     }
                 }
             }
         }
-        .botImgs{
+
+        .botImgs {
             padding: 0;
             margin: 0 auto;
-            .allBox{
-                img{
+
+            .allBox {
+                overflow: hidden;
+                img {
                     width: 470px;
                     margin: 0;
+                transition: 0.8s ease-in-out;
+
+                }
+                &:hover{
+                    
+                    img{
+                        overflow: hidden;
+                        transform: scale(1.2);
+                        border-radius: 10px;
+                    }
+                }
+                .overlay{
+                    z-index: 1;
+
                 }
             }
         }
 
     }
-    // feature end 
+
+    // section feature end 
 }
