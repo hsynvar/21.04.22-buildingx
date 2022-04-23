@@ -479,6 +479,91 @@
   height: 500px;
 }
 
+.feature {
+  background: url(http://www.themesindustry.com/html/buildingx/images/parallax1.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #002e5b;
+  width: 100%;
+}
+
+.feature .topMenu {
+  width: 60%;
+  margin: auto;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.feature .topMenu h2 {
+  padding: 20px 0;
+  color: white;
+  font-weight: 700;
+}
+
+.feature .topMenu ul {
+  width: 80%;
+  margin: auto;
+}
+
+.feature .topMenu ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.feature .botImgs {
+  width: 80%;
+  margin: auto;
+}
+
+.feature .botImgs .allBox {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.feature .botImgs .allBox img {
+  border-radius: 10px;
+}
+
+.feature .botImgs .allBox .overlay {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  background-color: #ffb700d3;
+  overflow: hidden;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.feature .botImgs .allBox .overlay h6 {
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+}
+
+.feature .botImgs .allBox .overlay span {
+  position: absolute;
+  bottom: 4%;
+  left: 5%;
+}
+
+.feature .botImgs .allBox:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
 @media (max-width: 762px) {
   #header .topHeader {
     display: none;
@@ -575,6 +660,24 @@
   }
   .about .botBox .allBox .imgsBox .bildBox p {
     font-size: 14px;
+  }
+  .feature .topMenu {
+    width: 100%;
+  }
+  .feature .topMenu ul {
+    width: 100%;
+  }
+  .feature .topMenu ul li a {
+    font-size: 14px;
+    margin-left: 25px;
+  }
+  .feature .botImgs {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .feature .botImgs .allBox img {
+    width: 470px;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
